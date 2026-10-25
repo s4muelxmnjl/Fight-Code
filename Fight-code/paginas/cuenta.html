@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fffaf8">
+  <title>Acceso — FIGHT+ CODE</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <script defer src="../scripts/sitio.js"></script>
+</head>
+<body class="account-page-body">
+  <header class="site-header account-header"><div class="wrap"><div class="nav">
+    <a class="brand" href="../index.html" aria-label="FIGHT+ CODE · Inicio"><img class="brand-logo logo-light" src="../img/fightcode2.png" alt="FIGHT+ CODE"><img class="brand-logo logo-dark" src="../img/fightcode.png" alt=""></a>
+    <div class="nav-tools"><button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema"><span class="theme-swatch"></span><span class="theme-label" id="themeLabel">Tema claro</span></button></div>
+  </div></div></header>
+  <main class="wrap account-page">
+    <section class="account-layout">
+      <div class="account-intro">
+        <div class="eyebrow accent"><span class="status-dot"></span> FIGHT+ CODE · ACCESO</div>
+        <h1 class="page-title">Tu próximo<br><span>round empieza aquí.</span></h1>
+        <p class="lead">Entra a tu espacio y continúa construyendo nuevas oportunidades con cada línea de código.</p>
+        <div class="account-code-card" aria-label="Archivo de código F+CODE.mma">
+          <div class="account-code-bar"><span class="account-code-lights" aria-hidden="true"><i></i><i></i><i></i></span><span>F+CODE.mma</span><span class="account-code-state"><i></i> listo para avanzar</span></div>
+          <pre><code><span class="code-muted">// cada round suma experiencia</span>
+<span class="code-keyword">const</span> <span class="code-name">siguientePaso</span> = {
+  disciplina: <span class="code-value">"constante"</span>,
+  curiosidad: <span class="code-value">true</span>,
+  objetivo: <span class="code-value">"crear"</span>
+};
+
+<span class="code-keyword">function</span> <span class="code-name">avanzar</span>() {
+  <span class="code-keyword">return</span> <span class="code-name">aprender</span>(siguientePaso);
+}</code></pre>
+          <div class="account-code-footer"><span>Identidad</span><b></b><span>Aprendizaje</span><b></b><span>Progreso</span></div>
+        </div>
+      </div>
+      <section class="account-panel" id="accountPanel" aria-live="polite">
+        <div class="account-switch" role="tablist" aria-label="Acceso a tu cuenta"><button class="account-tab is-active" type="button" id="loginTab" role="tab" aria-selected="true">Iniciar sesión</button><button class="account-tab" type="button" id="registerTab" role="tab" aria-selected="false">Crear cuenta</button></div>
+        <form id="loginForm" class="account-form">
+          <span class="account-step">01 <i></i> ACCESO SEGURO</span><h2>Qué bueno verte.</h2><p class="account-muted" id="loginRoleNote">Elige tu tipo de cuenta e inicia sesión.</p>
+          <label for="loginRole">Tipo de usuario</label><select id="loginRole" name="rol"><option value="coder">Coder</option><option value="mentor">Maestro</option></select>
+          <label for="loginEmail">Correo electrónico</label><input id="loginEmail" name="correo" type="email" autocomplete="email" required maxlength="254">
+          <label for="loginPassword">Contraseña</label><input id="loginPassword" name="clave" type="password" autocomplete="current-password" required>
+          <button class="button" type="submit">Iniciar sesión →</button><p class="account-message" id="loginMessage" role="status"></p>
+        </form>
+        <form id="registerForm" class="account-form" hidden>
+          <span class="account-step">01 <i></i> CREA TU ESPACIO</span><h2>Empieza tu recorrido.</h2><p class="account-muted" id="registerRoleNote">Crea una cuenta de coder para acceder a la ruta y guardar tus resultados.</p>
+          <label for="registerRole">Tipo de usuario que registras</label><select id="registerRole" name="rol"><option value="coder">Coder</option><option value="mentor">Maestro</option></select>
+          <div id="mentorCodeField" hidden><label for="mentorCode">Código de invitación de mentor</label><input id="mentorCode" name="codigo_mentor" type="password" autocomplete="off"><small>Solicítalo a quien administra la plataforma.</small></div>
+          <label for="registerName">Nombre</label><input id="registerName" name="nombre" type="text" autocomplete="name" minlength="2" maxlength="80" required>
+          <label for="registerSurname">Apellido</label><input id="registerSurname" name="apellido" type="text" autocomplete="family-name" minlength="2" maxlength="80" required>
+          <label for="registerIdentification">Cédula o tarjeta de identidad</label><input id="registerIdentification" name="identificacion" type="text" autocomplete="off" minlength="5" maxlength="30" required>
+          <label for="registerEmail">Correo electrónico</label><input id="registerEmail" name="correo" type="email" autocomplete="email" maxlength="254" required>
+          <label for="registerPassword">Contraseña</label><input id="registerPassword" name="clave" type="password" autocomplete="new-password" minlength="10" maxlength="128" required><small>Usa al menos 10 caracteres.</small>
+          <button class="button" type="submit">Crear cuenta →</button><p class="account-message" id="registerMessage" role="status"></p>
+        </form>
+      </section>
+    </section>
+  </main>
+  <footer class="site-footer account-footer"><div class="wrap footer-row"><span>FIGHT+ CODE · El futuro también se escribe con código.</span><span>Aprender · Practicar · Avanzar</span></div></footer>
+  <script src="../scripts/cuenta.js"></script>
+</body>
+</html>

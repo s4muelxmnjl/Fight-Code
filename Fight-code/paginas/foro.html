@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fffaf8">
+  <meta name="description" content="Anuncios y conversaciones de la comunidad FIGHT+ CODE.">
+  <title>Foro — FIGHT+ CODE</title>
+  <link rel="stylesheet" href="../styles/styles.css"><link rel="stylesheet" href="../styles/foro.css">
+  <script defer src="../scripts/sitio.js"></script>
+</head>
+<body>
+  <header class="site-header"><div class="wrap"><div class="nav">
+    <a class="brand" href="../index.html" aria-label="FIGHT+ CODE, inicio"><img class="brand-logo logo-light" src="../img/fightcode2.png" alt="FIGHT+ CODE"><img class="brand-logo logo-dark" src="../img/fightcode.png" alt=""></a>
+    <nav class="nav-links" aria-label="Navegación principal"><a href="../index.html">Inicio</a><a href="ruta_aprendizaje.html">Ruta de aprendizaje</a></nav>
+    <div class="nav-tools"><button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema"><span class="theme-swatch"></span><span class="theme-label" id="themeLabel">Tema claro</span></button><button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button></div>
+  </div><nav class="mobile-nav" id="mobileNav" aria-label="Navegación móvil"><a href="../index.html">Inicio</a><a href="ruta_aprendizaje.html">Ruta de aprendizaje</a></nav></div></header>
+  <main class="wrap forum-page">
+    <section class="page-hero"><div class="page-hero-panel forum-hero"><div class="eyebrow accent">FIGHT+ CODE · ENCUENTRO Y APRENDIZAJE</div><h1 class="page-title">El foro de la comunidad.</h1><p class="lead">Anuncios oficiales, ideas y conversaciones para avanzar juntos en cada round.</p></div></section>
+    <section class="section forum-content" aria-label="Publicaciones del foro">
+      <div class="forum-toolbar"><div class="forum-tabs" role="tablist" aria-label="Secciones del foro"><button class="forum-tab is-active" id="announcementsTab" type="button" role="tab" aria-selected="true" data-channel="anuncios">Anuncios <span id="announcementsCount">0</span></button><button class="forum-tab" id="communityTab" type="button" role="tab" aria-selected="false" data-channel="comunidad">Comunidad <span id="communityCount">0</span></button></div><button class="button outline small" id="refreshForum" type="button">Actualizar</button></div>
+      <div id="forumComposer" class="forum-create-entry"></div>
+      <p class="forum-description" id="forumDescription">Avisos, materiales y enlaces oficiales publicados por los mentores.</p>
+      <div class="forum-feed" id="forumFeed" aria-live="polite"><article class="content-block forum-empty">Cargando publicaciones…</article></div>
+      <p class="account-message is-error" id="forumMessage" role="status"></p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-row"><div><a class="footer-brand" href="../index.html" aria-label="FIGHT+ CODE"><img class="brand-logo logo-light" src="../img/fightcode2.png" alt="FIGHT+ CODE"><img class="brand-logo logo-dark" src="../img/fightcode.png" alt=""></a><div>El futuro también se escribe con código.</div></div><div class="footer-links"><a href="ruta_aprendizaje.html">Ruta de aprendizaje</a><span>© 2026 FIGHT+ CODE</span></div></div></footer>
+  <script src="../scripts/foro.js"></script>
+</body>
+</html>

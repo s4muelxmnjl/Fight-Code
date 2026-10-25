@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#fffaf8">
+    <title>
+      Documentación — FIGHT+ CODE
+    </title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script defer src="../scripts/sitio.js">
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <div class="nav">
+          <a class="brand" href="../index.html"><img class="brand-logo logo-light" src="../img/fightcode2.png" alt="FIGHT+ CODE"><img class="brand-logo logo-dark" src="../img/fightcode.png" alt=""></a>
+          <nav class="nav-links" aria-label="Navegación principal"><a href="../index.html">Inicio</a><a href="ruta_aprendizaje.html" aria-current="page">Ruta de aprendizaje</a></nav>
+          <div class="nav-tools">
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+              <span class="theme-swatch">
+              </span>
+              <span class="theme-label" id="themeLabel">
+                Tema claro
+              </span>
+            </button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+              ☰
+            </button>
+          </div>
+        </div>
+        <nav class="mobile-nav" id="mobileNav" aria-label="Navegación móvil"><a href="../index.html">Inicio</a><a href="ruta_aprendizaje.html">Ruta de aprendizaje</a></nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <section class="page-hero">
+        <div class="page-hero-panel">
+          <div class="breadcrumb">
+            <a href="../index.html">
+              Inicio
+            </a>
+            <span>
+              /
+            </span>
+            <span>
+              Documentación
+            </span>
+          </div>
+          <div class="eyebrow accent">
+            Consulta, aprende, construye
+          </div>
+          <h1 class="page-title">
+            Documentación de Python.
+          </h1>
+          <p class="lead">
+            Explora la documentación oficial y guías para profundizar en Python.
+          </p>
+        </div>
+      </section>
+      <section class="section" style="padding-top:24px">
+        <div class="section-heading">
+          <div>
+            <h2>
+              Biblioteca
+            </h2>
+            <p class="lead">
+              Filtra por tema y abre cada referencia en una pestaña nueva.
+            </p>
+          </div>
+          <label style="display:flex;gap:8px;align-items:center">
+            <span class="eyebrow accent">
+              Filtrar
+            </span>
+            <select id="docFilter" class="quiz-option" style="width:auto;padding:9px 12px">
+              <option value="all">
+                Todos los temas
+              </option>
+              <option value="Aprendizaje">Aprendizaje</option>
+              <option value="Referencia">Referencia</option>
+              <option value="Datos">Datos</option>
+              <option value="Lógica">Lógica</option>
+              <option value="Depuración">Depuración</option>
+              <option value="Organización">Organización</option>
+              <option value="Herramientas">Herramientas</option>
+              <option value="Buenas prácticas">Buenas prácticas</option>
+            </select>
+          </label>
+        </div>
+        <div class="resource-grid" id="docGrid">
+        </div>
+        <div class="callout" style="margin-top:18px">
+          Las referencias enlazan a documentación pública del proyecto Python y fuentes oficiales de su ecosistema.
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <div>
+          <a class="footer-brand" href="../index.html" aria-label="FIGHT+ CODE"><img class="brand-logo logo-light" src="../img/fightcode2.png" alt="FIGHT+ CODE"><img class="brand-logo logo-dark" src="../img/fightcode.png" alt=""></a>
+          <div>
+            El futuro también se escribe con código.
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="ruta_aprendizaje.html">
+            Python Básico
+          </a>
+          <a href="retos.html">
+            Retos
+          </a>
+          <a href="mailto:hola@fightcode.org">
+            Contacto
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="../scripts/contenido.js">
+    </script>
+    <script src="../scripts/documentacion.js">
+    </script>
+  </body>
+</html>

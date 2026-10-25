@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fffaf8">
+  <title>Mi cuenta — FIGHT+ CODE</title>
+  <link rel="stylesheet" href="../styles/styles.css"><script defer src="../scripts/sitio.js"></script>
+</head>
+<body class="profile-page-body">
+  <header class="site-header"><div class="wrap"><div class="nav">
+    <a class="brand" href="../index.html" aria-label="FIGHT+ CODE, inicio"><img class="brand-logo logo-light" src="../img/fightcode2.png" alt="FIGHT+ CODE"><img class="brand-logo logo-dark" src="../img/fightcode.png" alt=""></a>
+    <nav class="nav-links" aria-label="Navegación principal"><a href="../index.html">Inicio</a><a href="ruta_aprendizaje.html">Ruta de aprendizaje</a></nav>
+    <div class="nav-tools"><button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema"><span class="theme-swatch"></span><span class="theme-label" id="themeLabel">Tema claro</span></button><button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button></div>
+  </div><nav class="mobile-nav" id="mobileNav" aria-label="Navegación móvil"><a href="../index.html">Inicio</a><a href="ruta_aprendizaje.html">Ruta de aprendizaje</a></nav></div></header>
+  <main class="wrap profile-page">
+    <div class="eyebrow accent"><span class="status-dot"></span> ESPACIO PERSONAL</div>
+    <section class="profile-card" aria-labelledby="profileTitle">
+      <div class="profile-heading">
+        <div class="profile-avatar-wrap"><img id="profileAvatar" class="profile-avatar" alt="Foto de perfil" hidden><div id="profileAvatarFallback" class="profile-avatar profile-avatar-fallback" aria-hidden="true">FC</div></div>
+        <div class="profile-heading-copy"><span class="eyebrow accent" id="profileRole">MI CUENTA</span><h1 class="page-title" id="profileTitle">Tu perfil</h1><p class="lead" id="profileEmailDisplay">Cargando tu información…</p></div>
+      </div>
+      <section class="profile-photo-section" aria-labelledby="photoTitle">
+        <div><h2 id="photoTitle">Foto de perfil</h2><p class="account-muted">Usa una imagen JPG, PNG o WebP de hasta 4 MB.</p></div>
+        <form id="photoForm" class="profile-photo-form"><label class="button outline" for="profilePhotoInput">Elegir imagen</label><input id="profilePhotoInput" name="foto" type="file" accept="image/jpeg,image/png,image/webp" hidden><button class="button" type="submit" id="savePhotoButton" disabled>Guardar foto</button><button class="button outline" type="button" id="removePhotoButton" hidden>Quitar foto</button></form>
+        <p class="account-message" id="photoMessage" role="status"></p>
+      </section>
+      <form id="profileForm" class="account-form profile-form">
+        <div class="profile-section-title"><div class="eyebrow accent">DATOS PERSONALES</div><h2>Información de cuenta</h2></div>
+        <div class="profile-fields"><div><label for="profileName">Nombre</label><input id="profileName" name="nombre" minlength="2" maxlength="80" autocomplete="given-name" required></div><div><label for="profileSurname">Apellido</label><input id="profileSurname" name="apellido" minlength="2" maxlength="80" autocomplete="family-name" required></div><div><label for="profileId">Cédula o tarjeta de identidad</label><input id="profileId" name="identificacion" minlength="5" maxlength="30" autocomplete="off" required></div><div><label for="profileEmail">Correo electrónico</label><input id="profileEmail" name="correo" type="email" maxlength="254" autocomplete="email" required></div></div>
+        <div class="profile-section-title"><div class="eyebrow accent">SEGURIDAD</div><h2>Actualizar contraseña</h2><p class="account-muted">Confirma tu contraseña actual para guardar cambios. Si cambias la clave, se cerrarán las demás sesiones.</p></div>
+        <div class="profile-fields"><div><label for="currentPassword">Contraseña actual</label><input id="currentPassword" name="clave_actual" type="password" autocomplete="current-password" required></div><div><label for="newPassword">Nueva contraseña <span>(opcional)</span></label><input id="newPassword" name="clave" type="password" autocomplete="new-password" minlength="10" maxlength="128"></div></div>
+        <div class="profile-form-actions"><button class="button" type="submit">Guardar cambios →</button><p class="account-message" id="profileMessage" role="status"></p></div>
+      </form>
+      <section class="profile-results" aria-labelledby="profileResultsTitle"><div class="profile-section-title"><div class="eyebrow accent">MI RECORRIDO</div><h2 id="profileResultsTitle">Actividad y resultados</h2></div><div id="profileStats" class="profile-stats"><p class="account-muted">Cargando tus resultados…</p></div></section>
+      <div class="profile-footer"><a class="arrow-link" id="learningLink" href="ruta_aprendizaje.html">Volver a mi espacio →</a><button class="button outline" id="logoutButton" type="button">Cerrar sesión</button></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-row"><span>FIGHT+ CODE · Tu espacio personal.</span><span>Aprender · Practicar · Avanzar</span></div></footer>
+  <script src="../scripts/perfil.js"></script>
+</body>
+</html>

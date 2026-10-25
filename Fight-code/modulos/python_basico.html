@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fffaf8">
+  <title>Python Básico — FIGHT+ CODE</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/foro.css">
+  <script defer src="../scripts/sitio.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="../index.html"><img class="brand-logo logo-light" src="../img/fightcode2.png" alt="FIGHT+ CODE"><img class="brand-logo logo-dark" src="../img/fightcode.png" alt=""></a>
+        <nav class="nav-links" aria-label="Navegación principal"><a href="../index.html">Inicio</a><a href="../paginas/ruta_aprendizaje.html" aria-current="page">Ruta de aprendizaje</a></nav>
+        <div class="nav-tools">
+          <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema"><span class="theme-swatch"></span><span class="theme-label" id="themeLabel">Tema claro</span></button>
+          <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Navegación móvil"><a href="../index.html">Inicio</a><a href="../paginas/ruta_aprendizaje.html">Ruta de aprendizaje</a></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="page-hero">
+      <div class="breadcrumb"><a href="../index.html">Inicio</a><span>/</span><a href="../paginas/ruta_aprendizaje.html">Ruta de aprendizaje</a><span>/</span><span>Python Básico</span></div>
+      <div class="module-intro">
+        <div>
+          <div class="eyebrow accent">MÓDULO 01 · NIVEL INICIAL</div>
+          <h1 class="page-title" id="moduleTitle">Python Básico</h1>
+          <p id="moduleSummary" class="lead"></p>
+          <div class="tags" style="margin:15px 0 0"><span class="tag" id="moduleLevel"></span><span class="tag" id="moduleDuration"></span></div>
+        </div>
+        <div class="module-number python-icon" aria-label="Icono de Python"><img src="../img/python.png" alt=""></div>
+      </div>
+    </section>
+    <nav class="module-nav" aria-label="Secciones de Python Básico">
+      <a href="#sobre-python">Sobre Python</a><a href="#lecciones">Lecciones</a><a href="#material-curso">Material del curso</a><a href="#foro-del-modulo">Foro del módulo</a><a href="../paginas/cuestionario.html">Quiz de 25 preguntas</a><a href="../paginas/retos.html">Retos PDF</a><a href="../paginas/documentacion.html">Documentación</a>
+    </nav>
+    <section class="section" id="sobre-python" style="padding-top:24px">
+      <div class="section-heading"><div><div class="eyebrow accent">El lenguaje</div><h2>¿Qué es Python?</h2></div></div>
+      <article class="content-block">
+        <p>Python es un lenguaje de programación de propósito general, conocido por una sintaxis legible. Se utiliza para automatizar tareas, crear aplicaciones web, analizar datos, desarrollar herramientas y explorar inteligencia artificial.</p>
+        <p>En Python, la indentación organiza los bloques de código. Las variables se crean al asignarles un valor, y no es necesario declarar previamente su tipo.</p>
+        <pre class="code-sample"><code>nombre = "Alex"
+print(f"Hola, {nombre}!")</code></pre>
+        <div class="callout">Este módulo recorre cinco bases: instrucciones y sintaxis, datos, condiciones, colecciones y ciclos, funciones y depuración.</div>
+      </article>
+    </section>
+    <section class="section" id="lecciones">
+      <div class="section-heading"><div><div class="eyebrow accent">Aprende paso a paso</div><h2>Las cinco secciones</h2><p class="lead">Estudia los conceptos y después responde las preguntas de cada tema.</p></div><a class="arrow-link" href="../paginas/cuestionario.html">Comenzar quiz →</a></div>
+      <div class="lesson-list" id="lessonList"></div>
+    </section>
+    <section class="section" id="material-curso">
+      <div class="section-heading"><div><div class="eyebrow accent">Material de curso</div><h2>Continúa aprendiendo con notebooks.</h2><p class="lead">Un recurso externo con teoría y ejercicios guiados de Python.</p></div></div>
+      <article class="material-course">
+        <div class="repo-icon" aria-hidden="true">&lt;/&gt;</div>
+        <div class="material-copy">
+          <div class="eyebrow accent">Repositorio de GitHub</div>
+          <h3>Repositorio estudiado en nuestras sesiones</h3>
+          <p>Incluye sesiones de introducción, variables, control de flujo, estructuras de datos, funciones y un proyecto final. El material está preparado como notebooks para trabajar con Google Colab.</p>
+          <pre class="clone-command"><code>git clone https://github.com/afreydev/curso-python.git</code></pre>
+          <a class="button" href="https://github.com/afreydev/curso-python" target="_blank" rel="noopener noreferrer">Abrir repositorio →</a>
+        </div>
+      </article>
+    </section>
+    <section class="section" id="material-mentores">
+      <div class="section-heading"><div><div class="eyebrow accent">Acompañamiento</div><h2>Material y avisos de mentores.</h2><p class="lead">Novedades, enlaces y recursos publicados para los coders.</p></div></div>
+      <div class="mentor-content-grid" id="mentorContent"><p class="account-muted">Cargando publicaciones…</p></div>
+    </section>
+    <section class="section forum-module-section" id="foro-del-modulo" data-module-forum="python-basico">
+      <div class="section-heading"><div><div class="eyebrow accent">COMUNIDAD</div><h2>Foro de Python Básico</h2><p class="lead">Comparte dudas, ideas y soluciones con otros coders y mentores.</p></div></div>
+      <div data-module-forum-compose></div>
+      <div class="forum-feed" data-module-forum-feed><article class="content-block forum-empty">Cargando conversaciones…</article></div>
+      <p class="account-message" data-module-forum-message role="status"></p>
+    </section>
+    <section class="section">
+      <div class="challenge-layout">
+        <article class="challenge-feature"><div class="eyebrow">Práctica adicional</div><h3>Aprende Python construyendo.</h3><p>Descarga cinco retos guiados: calculadora, juego de adivinanza, agenda de tareas, conversor y analizador de palabras.</p><a class="button" href="../documentos/retos_python_basico.pdf" download>Descargar retos PDF ↓</a></article>
+        <aside class="side-feature"><strong>¿Listo para comprobar lo aprendido?</strong><p>El quiz tiene cinco secciones, 25 preguntas y una reflexión final.</p><a class="arrow-link" href="../paginas/cuestionario.html">Ir al quiz de Python →</a></aside>
+      </div>
+    </section>
+    <section class="section" id="documentacion"><div class="section-heading"><div><div class="eyebrow accent">Para seguir explorando</div><h2>Documentación recomendada</h2></div><a class="arrow-link" href="../paginas/documentacion.html">Ver biblioteca completa →</a></div><div class="resource-grid" id="docList"></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-row"><div><a class="footer-brand" href="../index.html" aria-label="FIGHT+ CODE"><img class="brand-logo logo-light" src="../img/fightcode2.png" alt="FIGHT+ CODE"><img class="brand-logo logo-dark" src="../img/fightcode.png" alt=""></a><div>El futuro también se escribe con código.</div></div><div class="footer-links"><a href="../paginas/cuestionario.html">Quiz</a><a href="../paginas/retos.html">Retos</a><a href="../paginas/documentacion.html">Documentación</a></div></div></footer>
+  <script src="../scripts/contenido.js"></script>
+  <script src="../scripts/modulo.js"></script>
+  <script src="../scripts/contenido_mentor.js"></script>
+  <script src="../scripts/foro_modulo.js"></script>
+</body>
+</html>

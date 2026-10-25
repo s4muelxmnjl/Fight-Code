@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fffaf8">
+  <title>Quiz Python Básico — FIGHT+ CODE</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <script defer src="../scripts/sitio.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="../index.html"><img class="brand-logo logo-light" src="../img/fightcode2.png" alt="FIGHT+ CODE"><img class="brand-logo logo-dark" src="../img/fightcode.png" alt=""></a>
+        <nav class="nav-links" aria-label="Navegación principal"><a href="../index.html">Inicio</a><a href="ruta_aprendizaje.html" aria-current="page">Ruta de aprendizaje</a></nav>
+        <div class="nav-tools">
+          <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema"><span class="theme-swatch"></span><span class="theme-label" id="themeLabel">Tema claro</span></button>
+          <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Navegación móvil"><a href="../index.html">Inicio</a><a href="ruta_aprendizaje.html">Ruta de aprendizaje</a></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="page-hero">
+      <div class="page-hero-panel">
+        <div class="breadcrumb"><a href="../index.html">Inicio</a><span>/</span><a href="../modulos/python_basico.html">Python Básico</a><span>/</span><span>Quiz final</span></div>
+        <div class="eyebrow accent">Evaluación · Python Básico</div>
+        <h1 class="page-title">Todo lo que aprendiste,<br>en práctica.</h1>
+        <p class="lead">25 preguntas de opción múltiple, distribuidas en cinco secciones. Al final podrás compartir qué aprendiste y qué dificultades encontraste.</p>
+      </div>
+    </section>
+    <section class="quiz-shell" id="quizApp">
+      <div class="quiz-start" id="quizStart">
+        <span class="card-icon">25</span>
+        <h2>Tu recorrido de Python</h2>
+        <p>Explora las cinco secciones a tu ritmo. Al terminar podrás revisar tu resultado.</p>
+        <ul class="quiz-overview"><li>5 secciones</li><li>5 preguntas por sección</li><li>2 preguntas abiertas</li></ul>
+        <button class="button" id="startQuiz">Comenzar quiz →</button>
+      </div>
+      <div id="quizRun" hidden>
+        <div class="quiz-progress-header"><div><span class="eyebrow accent">TU RECORRIDO</span><h2>Responde a tu ritmo</h2></div><span class="quiz-count" id="questionCount">0 de 25 respondidas</span></div>
+        <progress id="quizProgress" value="0" max="25" aria-label="Progreso del quiz"></progress>
+        <div class="quiz-section-track" id="quizSectionTrack" aria-label="Progreso por secciones">
+          <span class="quiz-section-step" data-section="0" aria-label="Sección 1: primeros pasos">01</span>
+          <span class="quiz-section-step" data-section="1" aria-label="Sección 2: variables y datos">02</span>
+          <span class="quiz-section-step" data-section="2" aria-label="Sección 3: operadores y condiciones">03</span>
+          <span class="quiz-section-step" data-section="3" aria-label="Sección 4: listas y ciclos">04</span>
+          <span class="quiz-section-step" data-section="4" aria-label="Sección 5: funciones y depuración">05</span>
+        </div>
+        <div class="quiz-sections" id="quizSections"></div>
+        <div class="quiz-finish"><p id="quizHint">Elige una respuesta en cada pregunta para continuar.</p><button class="button" id="finishQuiz" disabled>Terminar quiz →</button></div>
+      </div>
+      <form id="reflectionForm" class="reflection" hidden>
+        <div class="eyebrow accent">Cierre del curso · Respuesta libre</div>
+        <h2>Tu aprendizaje también cuenta.</h2>
+        <p class="lead">Comparte una reflexión final. No hay respuestas correctas o incorrectas.</p>
+        <label for="learnedAnswer">1. ¿Qué aprendiste durante el curso?</label>
+        <textarea id="learnedAnswer" name="learnedAnswer" rows="5" required placeholder="Escribe aquí tus ideas..."></textarea>
+        <label for="challengeAnswer">2. ¿Qué problemáticas o dificultades encontraste durante el curso?</label>
+        <textarea id="challengeAnswer" name="challengeAnswer" rows="5" required placeholder="Cuéntanos qué fue difícil y cómo lo abordaste..."></textarea>
+        <button class="button" type="submit">Ver mi resultado →</button>
+      </form>
+      <section id="quizResult" class="quiz-result" hidden aria-live="polite"></section>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-row"><div><a class="footer-brand" href="../index.html" aria-label="FIGHT+ CODE"><img class="brand-logo logo-light" src="../img/fightcode2.png" alt="FIGHT+ CODE"><img class="brand-logo logo-dark" src="../img/fightcode.png" alt=""></a><div>El futuro también se escribe con código.</div></div><div class="footer-links"><a href="../modulos/python_basico.html">Python Básico</a><a href="retos.html">Retos</a><a href="documentacion.html">Documentación</a></div></div></footer>
+  <script src="../scripts/contenido.js"></script>
+  <script src="../scripts/cuestionario.js"></script>
+</body>
+</html>
