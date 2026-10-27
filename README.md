@@ -2,7 +2,7 @@
 
 # FIGHT+ CODE
 
-Plataforma educativa con acceso por roles, rutas de aprendizaje, evaluaciones, control de asistencia, administración de contenidos y un minijuego de combate con clasificación por cuenta.
+Plataforma educativa con acceso por rol (Coder, Mentor), rutas de aprendizaje, evaluaciones, control de asistencia, administración de contenidos y un minijuego de combate con clasificación por cuenta.
 
 ## Requisitos
 
