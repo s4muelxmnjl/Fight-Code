@@ -1,6 +1,6 @@
 # PARTE DEL ENTORNO FIGHT+ - FUNDACIÓN CREADA PARA NUESTROS PELEADORES.
 
-# FIGHT+ CODE
+# FIGHT+ CODE - (NACIMIENTO DE FIGHT+ MMA)
 
 Plataforma educativa con acceso por rol (Coder, Mentor), rutas de aprendizaje, evaluaciones, control de asistencia, administración de contenidos y un minijuego de combate con clasificación por cuenta.
 
